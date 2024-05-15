@@ -1,0 +1,91 @@
+<!--Pagina Secundaria Por Luis Miguel Freitez Hernandez-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica 2</title>
+</head>
+<body background="imagenes/fondo.jpg">
+    <style>
+        /*Selector Universal*/
+        *
+        {
+           color:rgb(0, 0, 0); 
+           font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        }
+
+        /*Selector Simple*/
+        h2
+        {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        /*Selector de clave*/
+        .loginprincipal
+        {
+            border: 2px solid black;
+            background-color: cornflowerblue;
+        }
+        .colorfavorito
+        {
+            color: black;
+        }
+        
+        #carros
+        {
+            border: 2px solid yellowgreen;
+        }
+        button
+        {
+            padding:10px;
+    
+        }
+
+        #piedepagina
+        {
+            text-align: center;
+        }
+    </style>
+    <center>
+    <h2>¿Deseas ser parte de la comunidad?</h2>
+    <h2>Registrate aquí</h2>
+    <hr width="100%">
+    </center>
+    <br>
+    <br>
+    <form action="" method="">
+        <div class="loginprincipal">
+            <center>
+                <!--Entradas de Informacion (Input)-->
+        <input type="text" placeholder="Nombre">
+        <input type="text" placeholder="Apellido">
+        <input type="text" placeholder="Edad" min="15" max="100" value="18">
+        <br>
+        <br>
+        <input type="password" placeholder="Contraseña">
+        <input type="datetime-local">
+        <br>
+        <input type="email" placeholder="Correo Eletronico">
+        <p class="colorfavorito">Color Favorito:</p><input type="color">
+        </center>
+        </div><br><br><br>
+        <div class="cajasecundaria">
+            <p>HTML</p> <input type="radio" name="lenguaje_fav" id="">
+
+        </div>
+        <select name="automoviles" id="carros">
+            <option value="">Toyota</option>
+            <option value="">Fiat</option>
+            <option value="">Ford</option>
+            <option value="">Honda</option>
+            <option value="">Chevrolet</option>
+        </select><br><br>
+        <center>
+        <button>Registrar</button><button>Guardar</button><button>Eliminar</button><button type="reset">Limpiar</button>
+        </center>
+    </form><br>
+    <footer  id="piedepagina" style="color: white;">Derechos reservados a Luis Miguel Freitez Hernandez</footer>
+</body>
+</html>
