@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practica 2</title>
+    <title>Comunidad</title>
+    <link rel="icon" href="imagenes/Playstation.png">
 </head>
-<body background="imagenes/fondo.jpg">
+<body bgcolor="Black">
+    <!--Estilo de CSS de manera Interna-->
     <style>
         /*Selector Universal*/
         *
@@ -20,34 +22,31 @@
         h2
         {
             font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-            
+            color: yellow;
         }
         /*Selector de clave*/
-        .loginprincipal
+        .cajaprincipal
         {
-            border: 2px solid black;
+            border: 2px solid white;
             background-color: cornflowerblue;
         }
-        .colorfavorito
-        {
-            color: black;
-        }
-        
-        #carros
+        /*Selector ID*/
+        #consolas
         {
             border: 2px solid yellowgreen;
         }
         button
         {
             padding:10px;
-    
+            
         }
-
+        /*Selector ID*/
         #piedepagina
         {
             text-align: center;
         }
     </style>
+    <a href="Index.html" style="color:azure">Regresar</a>
     <center>
     <h2>¿Deseas ser parte de la comunidad?</h2>
     <h2>Registrate aquí</h2>
@@ -55,37 +54,39 @@
     </center>
     <br>
     <br>
+    <center><img src="Imagenes/gameplay.jpg" alt="screenshot del juego" width="80%" height="auto"></center><br>
     <form action="" method="">
-        <div class="loginprincipal">
+        <div class="cajaprincipal" width="80%" height="auto">
             <center>
                 <!--Entradas de Informacion (Input)-->
+                <br>
         <input type="text" placeholder="Nombre">
         <input type="text" placeholder="Apellido">
-        <input type="text" placeholder="Edad" min="15" max="100" value="18">
+        <label for="">Edad:</label><input type="number" placeholder="Edad" min="15" max="100" value="18">
         <br>
-        <br>
-        <input type="password" placeholder="Contraseña">
-        <input type="datetime-local">
+        <label for="">Fecha de Nacimiento:</label><input type="date">
         <br>
         <input type="email" placeholder="Correo Eletronico">
-        <p class="colorfavorito">Color Favorito:</p><input type="color">
+        <input type="password" placeholder="Contraseña"><br>
+        <label class="colorfavorito">Color Favorito:</label><input type="color"><br>
+        <label>Consola que utilizas:</label><select id="consolas">
+            <option value="">PSP</option>
+            <option value="">PS2</option>
+            <option value="">PS3</option>
+            <option value="">PS4</option>
+            <option value="">PS5</option>
+            <option value="">3DS</option>
+        </select><br>
+        <label>Sexo:</label><input type="radio" name="chico"><label>Masculino</label>
+        <input type="radio" name="chica"><label for="">Femenino</label><br>
+        <label>Descripcion Breve:</label><br><textarea name="Descripcion" id="" cols="0" rows="2"></textarea>
         </center>
         </div><br><br><br>
-        <div class="cajasecundaria">
-            <p>HTML</p> <input type="radio" name="lenguaje_fav" id="">
-
-        </div>
-        <select name="automoviles" id="carros">
-            <option value="">Toyota</option>
-            <option value="">Fiat</option>
-            <option value="">Ford</option>
-            <option value="">Honda</option>
-            <option value="">Chevrolet</option>
-        </select><br><br>
         <center>
-        <button>Registrar</button><button>Guardar</button><button>Eliminar</button><button type="reset">Limpiar</button>
+        <button>Registrar</button><button type="reset">Limpiar</button>
         </center>
-    </form><br>
+    </form><br><hr width="100%" color="green">
     <footer  id="piedepagina" style="color: white;">Derechos reservados a Luis Miguel Freitez Hernandez</footer>
+    <center><img src="imagenes/Luis.jpg" alt="Foto Personal" width="200" height="auto"></center>
 </body>
 </html>
